@@ -1,0 +1,86 @@
+{
+    "welcome": "Hey there, welcome back!",
+    "@welcome": {
+        "description": "Hey there, Welcome back"
+    },
+    "signInTo": "Sign in to continue with your email, facebook or google account.",
+    "@signInTo": {
+        "description": "Sign in description"
+    },
+    "email": "Email",
+    "@email": {
+        "description": "Email description"
+    },
+    "password": "Password",
+    "@password": {
+        "description": "Password description"
+    },
+    "confirmPassword": "Confirm password",
+    "@confirmPassword": {
+        "description": "Confirm password description"
+    },
+    "forgotPassword": "Forgot password?",
+    "@forgotPassword": {
+        "description": "Forgot description"
+    },
+    "signIn": "Sign In",
+    "@signIn": {
+        "description": "Sign In description"
+    },
+    "or": "or",
+    "@or": {
+        "description": "or description"
+    },
+    "needCreate": "Need create an account?",
+    "@needCreate": {
+        "description": "Sign In description"
+    },
+    "signUp": "Sign Up",
+    "@signUp": {
+        "description": "Sign Up description"
+    },
+    "writeYourData": "Write your new account data",
+    "@writeYourData": {
+        "description": "Write your data info"
+    },
+    "byTapingContinue": "By taping 'Continue', you agree to the Terms and privacy Policy",
+    "@byTapingContinue": {
+        "description": "by taping continue info"
+    },
+    "youHaveAccount": "Do you have an Account?",
+    "@youHaveAccount": {
+        "description": "you have account description"
+    },
+    "name": "Name",
+    "@name": {
+        "description": "name description"
+    },
+    "lastName": "Last Name",
+    "@lastName": {
+        "description": "last name description"
+    },
+    "passwordRecovery": "Password recovery",
+    "@passwordRecovery": {
+        "description": "password recoverydescription"
+    },
+    "enterEmailRecovery": "Enter yout email address to reset your password",
+    "@enterEmailRecovery": {
+        "description": "enterEmailRecovery description"
+    },
+    "next": "Next",
+    "@next": {
+        "description": "next description"
+    },
+    "emailSended": "We've send an email with the instructions to recovery your password, when you recover your password please back to login.",
+    "@emailSended": {
+        "description": "emailSended description"
+    },
+    "backToLogin": "Back to login",
+    "@backToLogin": {
+        "description": "backToLogin description"
+    },
+     "emailSendedDone": "Email Sended",
+    "@emailSendedDone": {
+        "description": "emailSendedDone description"
+    }
+}

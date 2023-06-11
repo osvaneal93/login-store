@@ -1,0 +1,25 @@
+{
+  "welcome": "Bienvenido de nuevo!",
+  "signInTo": "Para continuar, inicia sesión con tu email, Facebook o cuenta de Google",
+  "email": "Correo electrónico",
+  "password": "Contraseña",
+  "confirmPassword": "Confirmar contraseña",
+  "forgotPassword": "Olvidé mi contraseña",
+  "signIn": "Iniciar sesión",
+  "or": "o",
+  "needCreate": "Quieres crear una cuenta?",
+  "signUp": "Registrarse",
+  "writeYourData": "Escribe los datos para tu nueva cuenta.",
+  "byTapingContinue": "Si das click en 'Continuar', aceptas los Términos y Políticas de Privacidad de la aplicación.",
+  "youHaveAccount": "Ya tienes una cuenta?",
+  "name":"Nombre",
+  "lastName":"Apellido",
+  "passwordRecovery": "Recuperar contraseña",
+  "enterEmailRecovery": "Ingresa tu email para recuperar tu contraseña",
+  "next": "Siguiente",
+  "emailSended": "Hemos enviado un email a tu bandeja de entrada con las instrucciones para recuperar tu contraseña. Vuelve a inicio de sesión",
+  "backToLogin": "Ir al login.",
+     "emailSendedDone": "Correo enviado."
+
+
+}

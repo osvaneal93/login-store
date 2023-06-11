@@ -1,0 +1,90 @@
+{
+  "project_info": {
+    "project_number": "662207813966",
+    "project_id": "newstoreapp-52ba1",
+    "storage_bucket": "newstoreapp-52ba1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:662207813966:android:2bd1e3a6eb3f599f49a61f",
+        "android_client_info": {
+          "package_name": "com.example.multi_store_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "662207813966-l39hrojatsqhvq2urnnpql2qsev2ookk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgoVpSHYRLaMF1pXevHe_3PmRxN9pGYxE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "662207813966-l39hrojatsqhvq2urnnpql2qsev2ookk.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "662207813966-mk37t3rkni7pnfc30oism0e10mg7v2o7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.multiStoreApp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:662207813966:android:e6c90818f662615249a61f",
+        "android_client_info": {
+          "package_name": "com.example.multi_store_app.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "662207813966-pegjb5o601rreqpkirtghot26oues7bo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.multi_store_app.dev",
+            "certificate_hash": "0beb3a6f1e057451139f83cb22925dd537e04eba"
+          }
+        },
+        {
+          "client_id": "662207813966-l39hrojatsqhvq2urnnpql2qsev2ookk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgoVpSHYRLaMF1pXevHe_3PmRxN9pGYxE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "662207813966-l39hrojatsqhvq2urnnpql2qsev2ookk.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "662207813966-mk37t3rkni7pnfc30oism0e10mg7v2o7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.multiStoreApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
