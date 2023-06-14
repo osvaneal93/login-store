@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:multi_store_app/features/auth/presentation/other/info_home_page.dart';
+import 'package:multi_store_app/features/auth/presentation/home_store.dart/home_store_screen.dart';
 import 'package:multi_store_app/features/auth/presentation/screen/login/login_screen.dart';
 import 'package:multi_store_app/features/auth/presentation/screen/recovery_password/email_sended.dart';
 import 'package:multi_store_app/features/auth/presentation/screen/recovery_password/recovery_passsword_screen.dart';
@@ -12,7 +12,7 @@ import 'package:multi_store_app/features/providers/auth/global_auth/global_auth_
 final routeProvider = Provider((ref) {
   final goProvider = ref.read(goRouterProvider);
   return GoRouter(
-    initialLocation: LoginScreen.path,
+    initialLocation: SplashScreen.path,
     refreshListenable: goProvider,
     routes: [
       //AuthRoutes*

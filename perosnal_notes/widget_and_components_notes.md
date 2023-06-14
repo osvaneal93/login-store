@@ -11,3 +11,40 @@ La notificaciones push, se refieren directamente la las notificaciones que viene
 https://pub.dev/packages/flutter_local_notifications. Las Local Notifications nos sirven para mostrar y además organizar nuestras notificaciones, así como darles una función a la hora de ser tappeadas.
 * Recomendado configurar primero las push notifications y posteriormente las local Notifications.
 
+
+
+-Para hacer los floating dentro de la app, por ejemplo un floating dgropdoewwn en donde vamos a utilizarlo
+para anclarlo a un widgret y cuando se haga scroll se quedde pegado a ese widget del fondo.
+
+  ///------------------------------------------------------------------------------------
+
+                //////////---------Composited sirve para poder anclar un wiget a otro---------------
+                ///------de acuerdo a la posición actual, se puede utilizar para los
+                ///-----------floatingDropdownBox
+                // final LayerLink _layerLink = LayerLink();
+
+                // CompositedTransformTarget(
+                //   link: _layerLink,
+                //   child: Text(
+                //     'NOMBRE DEVELOPER: ${flavorEnvironment.devName}',
+                //   ),
+                // ),
+                // CompositedTransformFollower(
+                //   link: _layerLink,
+                //   offset: Offset(0, 0),
+                //   child: Container(
+                //     height: 100,
+                //     width: 100,
+                //     decoration: BoxDecoration(color: Colors.red.withOpacity(.2)),
+                //   ),
+                // ),
+                //------------------------------------------
+                ///////--------------------------------------------------------------------------------
+                ///------------------------------------------------------------------------------------
+                // Text(
+                //   'API KEY TOKEN: ${flavorEnvironment.apiKey}',
+                // ),
+                // Text(
+                //   '0',
+                //   style: Theme.of(context).textTheme.headlineMedium,
+                // ),

@@ -4,6 +4,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:multi_store_app/core/constants/environment.dart';
@@ -44,6 +45,8 @@ void mainApp(FlavorEnvironment env) async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
   globalyAuth = FirebaseAuth.instanceFor(app: app);
+
+  SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: []);
 
   await LocalNotifications.initializeLocalNotifications();
   await NotificationsProvider.initializeFCM();
