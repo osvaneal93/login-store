@@ -18,6 +18,8 @@ class FlexibleSpaceBarHeader extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final screenSize = MediaQuery.of(context).size;
     return SliverAppBar(
+      // pinned: valueScroll < 90 ? true : false,
+      // automaticallyImplyLeading: false,
       expandedHeight: screenSize.height * .4,
       flexibleSpace: FlexibleSpaceBar(
         collapseMode: CollapseMode.pin,

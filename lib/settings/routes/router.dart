@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:multi_store_app/features/auth/presentation/home_store.dart/home_store_screen.dart';
+import 'package:multi_store_app/features/home/presentation/home_store/home_store_screen.dart';
 import 'package:multi_store_app/features/auth/presentation/screen/login/login_screen.dart';
 import 'package:multi_store_app/features/auth/presentation/screen/recovery_password/email_sended.dart';
 import 'package:multi_store_app/features/auth/presentation/screen/recovery_password/recovery_passsword_screen.dart';

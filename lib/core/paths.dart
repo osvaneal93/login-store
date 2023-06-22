@@ -6,6 +6,7 @@ class ConstPaths {
   String forgotPasswordImage = "assets/images/forgot_password.svg";
   String emailSended = 'assets/images/email_sended.svg';
   String modelsHeader = 'assets/images/models-headers.jpg';
+  String userAvatar = 'assets/images/user-avatar.png';
 }
 
 final ConstPaths paths = ConstPaths();

@@ -82,5 +82,13 @@
      "emailSendedDone": "Email Sended",
     "@emailSendedDone": {
         "description": "emailSendedDone description"
+    },
+      "deliverTo": "Deliver to",
+    "@deliverTo": {
+        "description": "deliverTo description"
+    },
+    "home": "Home",
+    "@home": {
+        "description": "home description"
     }
 }

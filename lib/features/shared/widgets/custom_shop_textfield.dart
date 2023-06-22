@@ -105,9 +105,10 @@ class _CustomShopTextfieldState extends State<CustomShopTextfield> {
                             isDarkMode ? Colors.amber.shade200.withOpacity(.1) : Colors.grey.shade200.withOpacity(.9),
                         enabledBorder: OutlineInputBorder(
                           borderSide: BorderSide(
+                            width: 2,
                             color: isDarkMode
                                 ? Colors.amber.shade200.withOpacity(.1)
-                                : Colors.grey.shade200.withOpacity(.9),
+                                : Colors.grey.shade300.withOpacity(.9),
                           ),
                           borderRadius: BorderRadius.circular(10.0),
                         ),

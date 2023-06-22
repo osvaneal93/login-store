@@ -19,7 +19,8 @@
   "next": "Siguiente",
   "emailSended": "Hemos enviado un email a tu bandeja de entrada con las instrucciones para recuperar tu contraseña. Vuelve a inicio de sesión",
   "backToLogin": "Ir al login.",
-     "emailSendedDone": "Correo enviado."
-
+  "emailSendedDone": "Correo enviado.",
+  "deliverTo": "Enviar a",
+  "home": "Casa"
 
 }
