@@ -15,7 +15,6 @@ class CustomScrollState {
 
 class CustomScrollStateProvider extends StateNotifier<CustomScrollState> {
   CustomScrollStateProvider(super.state);
-
   changeItemIndex(int index) {
     state = state.copyWith(index: index);
   }

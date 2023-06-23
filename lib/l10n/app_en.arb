@@ -90,5 +90,89 @@
     "home": "Home",
     "@home": {
         "description": "home description"
-    }
+    },
+    "allCategories": "All Categories",
+    "@allCategories": {
+        "description": "allCategories description"
+    },
+    "men": "Men",
+    "@men": {
+        "description": "men description"
+    },
+    "women": "Women Categories",
+    "@women": {
+        "description": "women description"
+    },
+    "kids": "Kids",
+    "@kids": {
+        "description": "kids description"
+    },
+    "accesories": "Accesories",
+    "@accesories": {
+        "description": "accesories description"
+    },
+    "shoes": "Shoes",
+    "@shoes": {
+        "description": "shoes description"
+    },
+    "music": "Music",
+    "@music": {
+        "description": "music description"
+    },
+    "books": "books",
+    "@books": {
+        "description": "books description"
+    },
+    "others": "Others",
+    "@others": {
+        "description": "others description"
+    },
+    "news": "New",
+    "@news": {
+        "description": "news description"
+    },
+    "arrival": "Arrival",
+    "@arrival": {
+        "description": "arrival description"
+    },
+    "withFreeShipping": "With Free Shipping",
+    "@withFreeShipping": {
+        "description": "withFreeShipping description"
+    },
+    "shopNow": "Shop Now",
+    "@shopNow": {
+        "description": "shopNow description"
+    },
+    "popularProducts": "Popular Products",
+    "@popularProducts": {
+        "description": "popularProducts description"
+    },
+    "flashSale": "flash Sale",
+    "@flashSale": {
+        "description": "flashSale description"
+    },
+    "upTo": "Up to",
+    "@upTo": {
+        "description": "upTo description"
+    },
+   "knockOutDeals": "Knock out Deals",
+    "@knockOutDeals": {
+        "description": "knockOutDeals description"
+    },
+   "budgetsBuys": "Budgets buys",
+   "@budgetsBuys": {
+       "description": "budgetsBuys description"
+   },
+   "discover": "Discover",
+    "@discover": {
+        "description": "discover description"
+    },
+   "favorites": "Fav",
+   "@favorites": {
+       "description": "favorites description"
+   },
+   "account": "Account",
+    "@account": {
+        "description": "account description"
+    } 
 }

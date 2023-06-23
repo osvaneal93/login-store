@@ -21,6 +21,26 @@
   "backToLogin": "Ir al login.",
   "emailSendedDone": "Correo enviado.",
   "deliverTo": "Enviar a",
-  "home": "Casa"
-
+  "home": "Casa",
+    "allCategories": "Todas",
+    "men": "Hombres",
+    "women": "Mujeres",
+    "kids": "Niños",
+    "accesories": "Accesorios",
+    "shoes": "Zapatos",
+    "music": "Música",
+    "books": "Libros",
+    "others": "Otros",
+    "news": "Nuevo",
+    "arrival": "en Stock",
+    "withFreeShipping": "Con envío gratis",
+    "shopNow": "Comprar ahora",
+    "popularProducts": "Productos Populares",
+    "flashSale": "Venta relámpago",
+    "upTo": "Hasta",
+   "knockOutDeals": "Mayores descuentos",
+   "budgetsBuys": "Presupuestos",
+   "discover": "Descubrir",
+   "favorites": "Fav",
+   "account": "Cuenta"
 }

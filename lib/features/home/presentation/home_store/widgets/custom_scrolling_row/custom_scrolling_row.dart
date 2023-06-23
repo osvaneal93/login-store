@@ -69,19 +69,23 @@ class CustomScrollingHelperState extends ConsumerState {
         sum += itemWithList[i];
         newList.add(sum);
       }
-      print(newList);
     });
 
-    void scrollToSelectedIndex(int index, double widgetWidth) {
-      if (_scrollController.hasClients) {
-        final itemPosition = newList[index] - widgetWidth;
+    void scrollToSelectedIndex(int index) {
+      customScrollerRead.changeItemIndex(index);
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        RenderBox renderBox = itemKeys[index].currentContext!.findRenderObject() as RenderBox;
+        double widgetWidth = renderBox.size.width;
+        if (_scrollController.hasClients) {
+          final itemPosition = newList[index] - widgetWidth;
 
-        _scrollController.animateTo(
-          itemPosition,
-          duration: const Duration(milliseconds: 500), // Duración de la animación (ajusta según tus necesidades)
-          curve: Curves.easeInOut, // Curva de la animación (ajusta según tus necesidades)
-        );
-      }
+          _scrollController.animateTo(
+            itemPosition,
+            duration: const Duration(milliseconds: 500),
+            curve: Curves.easeInOut,
+          );
+        }
+      });
     }
 
     // return CustomScrollingRow(customScrollerProvider.index);
@@ -96,22 +100,7 @@ class CustomScrollingHelperState extends ConsumerState {
               return InkWell(
                 splashColor: Colors.transparent,
                 highlightColor: Colors.transparent,
-                onTap: () {
-                  customScrollerRead.changeItemIndex(index);
-                  WidgetsBinding.instance.addPostFrameCallback((_) {
-                    RenderBox renderBox = itemKeys[index].currentContext!.findRenderObject() as RenderBox;
-                    double widgetWidth = renderBox.size.width;
-                    Offset itemPosition = renderBox.localToGlobal(Offset.zero);
-                    print(itemWithList);
-                    //-------------------------------
-                    //-------------------------------
-                    //ESTAMOS HACIENDO QUE EL SCROLL FUNCIONE BIEN, O SEA QUE SE MUEVA PARA CUANDO YA
-                    //NO SE VE EL ITEM, AHORITA YA TENEMOS LA MEDIDA DE LOS ITEM, DEBEMOS DE VER COMO
-                    //OBTENER UN METODO PARA VER SI EL ITEM SE DIBUJA EN LA PANTALLA por completo
-                    // double beforeItemOffset = print(itemPosition);
-                    scrollToSelectedIndex(index, widgetWidth);
-                  });
-                },
+                onTap: () => scrollToSelectedIndex(index),
                 child: AnimatedContainer(
                   key: itemKeys[index],
                   duration: const Duration(milliseconds: 100),
