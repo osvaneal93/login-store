@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:multi_store_app/features/home/presentation/home_store/widgets/custom_scrolling_row/custom_scroll_provider.dart';
+import 'package:multi_store_app/features/products/widgets/custom_scrolling_row/custom_scroll_provider.dart';
 
 class CustomScrollingRow extends SliverPersistentHeaderDelegate {
   CustomScrollingRow();

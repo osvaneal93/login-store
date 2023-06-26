@@ -9,20 +9,23 @@ class HeaderSlivers extends SliverPersistentHeaderDelegate {
   final String label;
   final String subtitle;
   final String terciaryText;
+  final void Function()? onTap, onPressedIcon, onPressedSubIcon;
 
   HeaderSlivers(
-      {this.icon,
+      {this.onPressedIcon,
+      this.onPressedSubIcon,
+      this.icon,
       this.label = 'Label',
       this.subtitle = 'Subtitule',
       this.terciaryText = 'Tertiary',
       this.subIcon,
       this.terciaryicon,
-      this.avatarPath});
+      this.avatarPath,
+      this.onTap});
   @override
   Widget build(BuildContext context, double shrinkOffset, bool overlapsContent) {
     final textStyle = Theme.of(context).textTheme;
     final percent = shrinkOffset / 100;
-    print(percent);
     return Stack(
       children: [
         AnimatedContainer(
@@ -34,17 +37,26 @@ class HeaderSlivers extends SliverPersistentHeaderDelegate {
             children: [
               Row(
                 children: [
-                  const SizedBox(
-                    width: 20,
+                  InkWell(
+                    onTap: onTap,
+                    child: Row(
+                      children: [
+                        const SizedBox(
+                          width: 20,
+                        ),
+                        CustomCircleAvatar(avatarPath: avatarPath, percent: percent),
+                        const SizedBox(
+                          width: 20,
+                        ),
+                        CustomHeaderLabels(label: label, textStyle: textStyle, subtitle: subtitle, percent: percent),
+                        SizedBox(
+                          width: 50,
+                        )
+                      ],
+                    ),
                   ),
-                  CustomCircleAvatar(avatarPath: avatarPath, percent: percent),
-                  const SizedBox(
-                    width: 20,
-                  ),
-                  CustomHeaderLabels(label: label, textStyle: textStyle, subtitle: subtitle, percent: percent),
-                  const Spacer(),
-                  CustomAnimatedOpacityIcon(percent: percent, icon: icon),
-                  CustomAnimatedOpacityIcon(percent: percent, icon: subIcon),
+                  CustomAnimatedOpacityIcon(percent: percent, icon: icon, onPressed: onPressedIcon),
+                  CustomAnimatedOpacityIcon(percent: percent, icon: subIcon, onPressed: onPressedSubIcon),
                   const SizedBox(
                     width: 20,
                   ),

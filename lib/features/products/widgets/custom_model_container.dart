@@ -26,7 +26,7 @@ class CustomModelContainer extends ConsumerWidget {
           borderRadius: BorderRadius.circular(20),
           color: Colors.white,
           boxShadow: [
-            BoxShadow(offset: Offset(2, 5), blurRadius: 10, spreadRadius: 1, color: Colors.grey.withOpacity(.2)),
+            BoxShadow(offset: const Offset(2, 5), blurRadius: 10, spreadRadius: 1, color: Colors.grey.withOpacity(.2)),
           ],
         ),
         height: screenSize.height * .35,
@@ -44,7 +44,7 @@ class CustomModelContainer extends ConsumerWidget {
                       BoxConstraints(maxWidth: screenSize.width * .45, maxHeight: (screenSize.height * .35) / 1.8),
                   child: Text(
                     title,
-                    style: textStyle.displayMedium?.copyWith(fontWeight: FontWeight.bold, color: Colors.amber),
+                    style: textStyle.headlineMedium?.copyWith(fontWeight: FontWeight.bold, color: Colors.amber),
                     overflow: TextOverflow.ellipsis,
                     maxLines: 2,
                   ),

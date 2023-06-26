@@ -6,13 +6,13 @@ import 'package:multi_store_app/features/auth/data/models/timer_model.dart';
 class CountdownClock extends StatefulWidget {
   final int countdownDuration;
 
-  CountdownClock({required this.countdownDuration});
+  const CountdownClock({super.key, required this.countdownDuration});
 
   @override
-  _CountdownClockState createState() => _CountdownClockState();
+  CountdownClockState createState() => CountdownClockState();
 }
 
-class _CountdownClockState extends State<CountdownClock> {
+class CountdownClockState extends State<CountdownClock> {
   int remainingSeconds = 0;
   late Timer countdownTimer;
 
@@ -30,7 +30,7 @@ class _CountdownClockState extends State<CountdownClock> {
 
   void startCountdown() {
     remainingSeconds = widget.countdownDuration;
-    countdownTimer = Timer.periodic(Duration(seconds: 1), (timer) {
+    countdownTimer = Timer.periodic(const Duration(seconds: 1), (timer) {
       setState(() {
         if (remainingSeconds > 0) {
           remainingSeconds--;

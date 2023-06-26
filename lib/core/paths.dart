@@ -10,6 +10,8 @@ class ConstPaths {
   String womanModel = 'assets/images/woman-model.png';
   String arianaBanner = 'assets/images/banner-ariana.jpg';
   String modelsKids = 'assets/images/models-kids.jpg';
+  String houseImage = 'assets/images/house-image.png';
+  String mapHardcode = 'assets/images/map-loc.png';
 }
 
 final ConstPaths paths = ConstPaths();

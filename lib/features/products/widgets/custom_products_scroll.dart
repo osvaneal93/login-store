@@ -25,7 +25,7 @@ class CustomProductsScroll extends ConsumerWidget {
                     offset: const Offset(2, 5), blurRadius: 10, spreadRadius: 1, color: Colors.grey.withOpacity(.2)),
               ],
             ),
-            height: screenSize.height * .35,
+            height: screenSize.height * .365,
             width: double.infinity,
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 10),
@@ -36,7 +36,7 @@ class CustomProductsScroll extends ConsumerWidget {
         Positioned(
           bottom: 10,
           child: SizedBox(
-            height: screenSize.height * .28,
+            height: screenSize.height * .29,
             width: screenSize.width,
             child: SingleChildScrollView(
               scrollDirection: Axis.horizontal,
@@ -67,12 +67,10 @@ class ProductCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {
-        print(index);
-      },
+      onTap: () {},
       child: Container(
         margin: const EdgeInsets.symmetric(horizontal: 10),
-        height: screenSize.height * .28,
+        height: screenSize.height * .285,
         width: screenSize.width * .33,
         padding: const EdgeInsets.symmetric(horizontal: 8.0),
         decoration: BoxDecoration(
@@ -93,7 +91,8 @@ class ProductCard extends StatelessWidget {
                   10,
                 ),
                 boxShadow: [
-                  BoxShadow(blurRadius: 5, spreadRadius: 1, offset: Offset(4, 4), color: Colors.grey.withOpacity(.2)),
+                  BoxShadow(
+                      blurRadius: 5, spreadRadius: 1, offset: const Offset(4, 4), color: Colors.grey.withOpacity(.2)),
                 ],
               ),
               child: Stack(
@@ -148,7 +147,7 @@ class ProductCard extends StatelessWidget {
               alignment: Alignment.centerLeft,
               child: Row(
                 children: [
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
                   (productList[index].discount != null)
@@ -160,7 +159,7 @@ class ProductCard extends StatelessWidget {
                           '\$ ${productList[index].price}',
                           style: textStyle.bodyMedium!.copyWith(fontWeight: FontWeight.bold, color: Colors.amber),
                         ),
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
                   if (productList[index].discount != null)

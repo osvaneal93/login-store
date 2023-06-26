@@ -66,7 +66,7 @@ class CustomBannerContainer extends ConsumerWidget {
                       style: textStyle.headlineMedium!.copyWith(color: Colors.white),
                       overflow: TextOverflow.ellipsis,
                     ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   if (onTap != null)

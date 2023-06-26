@@ -8,6 +8,7 @@ class ThemeDataMutiStore {
 
   ThemeData getThemeData() {
     return ThemeData(
+      splashColor: Colors.transparent,
       colorSchemeSeed: colorSeed,
       brightness: isDarkMode ? Brightness.dark : Brightness.light,
       useMaterial3: true,
